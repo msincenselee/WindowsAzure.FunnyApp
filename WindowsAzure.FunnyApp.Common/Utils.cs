@@ -4,7 +4,7 @@
     {
         public const string ConfigurationString = "DataConnectionString";
 
-        public const string CloudQueueKey = "Imagequeue";
-        public const string CloudBlobKey = "Imageblob";
+        public const string CloudQueueKey = "imagequeue";
+        public const string CloudBlobKey = "imageblob";
     }
 }

@@ -8,6 +8,8 @@
 
         public string PostImage { get; set; }
 
-        public string UserPartitionKey { get; set; }
+        public string UserId { get; set; }
+
+        public bool State { get; set; }
     }
 }

@@ -12,13 +12,11 @@ Windows Azure Cloud Service  solution example and portal
 
 "Windows Azure ile Cloud Computing Uygulamaları" articles serials is application example
 
-## Other repository
+## All Repositories
 
+Github:
 `https://github.com/ibrahimatay/WindowsAzure.FunnyApp`
 
-## Developer blog
+Codeplex:
+`https://windowsazurefunnyap.codeplex.com/`
 
-http://www.ibrahimatay.org/`
-
-## Note: 
-it is my instagram :)

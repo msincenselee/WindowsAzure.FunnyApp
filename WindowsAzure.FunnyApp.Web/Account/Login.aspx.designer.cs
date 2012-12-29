@@ -7,13 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsAzure.FunnyApp.Web.Account
-{
-
-
-    public partial class Login
-    {
-
+namespace WindowsAzure.FunnyApp.Web.Account {
+    
+    
+    public partial class Login {
+        
+        /// <summary>
+        /// Login1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Login Login1;
+        
         /// <summary>
         /// RegisterHyperLink control.
         /// </summary>
@@ -22,14 +29,5 @@ namespace WindowsAzure.FunnyApp.Web.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
-
-        /// <summary>
-        /// OpenAuthLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::WindowsAzure.FunnyApp.Web.Account.OpenAuthProviders OpenAuthLogin;
     }
 }

@@ -29,10 +29,5 @@
         {
             get { return this.CreateQuery<Comment>(typeof(Tag).Name); }
         }
-
-        public IQueryable<User> User
-        {
-            get { return this.CreateQuery<User>(typeof(Tag).Name); }
-        }
     }
 }

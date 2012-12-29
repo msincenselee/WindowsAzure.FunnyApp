@@ -1,24 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-//using Microsoft.AspNet.Membership.OpenAuth;
-
-namespace WindowsAzure.FunnyApp.Web.Account
+﻿namespace WindowsAzure.FunnyApp.Web.Account
 {
-    public partial class Manage : System.Web.UI.Page
-    {
-        protected string SuccessMessage
-        {
-            get;
-            private set;
-        }
+    using System;
+    using System.Web.UI;
 
-        protected bool CanRemoveExternalLogins
-        {
-            get;
-            private set;
-        }
+    public partial class Manage : Page
+    {
+        protected string SuccessMessage { get; private set; }
+
+        protected bool CanRemoveExternalLogins { get; private set; }
 
         protected void Page_Load()
         {
@@ -39,10 +28,13 @@ namespace WindowsAzure.FunnyApp.Web.Account
                     Form.Action = ResolveUrl("~/Account/Manage.aspx");
 
                     SuccessMessage =
-                        message == "ChangePwdSuccess" ? "Your password has been changed."
-                        : message == "SetPwdSuccess" ? "Your password has been set."
-                        : message == "RemoveLoginSuccess" ? "The external login was removed."
-                        : String.Empty;
+                        message == "ChangePwdSuccess"
+                            ? "Your password has been changed."
+                            : message == "SetPwdSuccess"
+                                  ? "Your password has been set."
+                                  : message == "RemoveLoginSuccess"
+                                        ? "The external login was removed."
+                                        : String.Empty;
                     successMessage.Visible = !String.IsNullOrEmpty(SuccessMessage);
                 }
             }

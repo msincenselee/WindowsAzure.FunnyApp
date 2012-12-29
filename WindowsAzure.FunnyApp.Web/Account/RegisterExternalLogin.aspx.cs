@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web;
-using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace WindowsAzure.FunnyApp.Web.Account
 {
     public partial class RegisterExternalLogin : System.Web.UI.Page
     {
+
         protected string ProviderName
         {
             get { return (string)ViewState["ProviderName"] ?? String.Empty; }

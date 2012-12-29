@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ServiceConfiguration serviceName="WindowsAzure.FunnyApp" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2012-10.1.8">
   <Role name="WindowsAzure.FunnyApp.Web">
-    
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=channelperforming;AccountKey=s2DdrMpdtRWGDFxIeKo6QEm7x0KvfUo5hbjSZkeH3dA96QVeUsUC0RnojILrbcqBoK3/lXxoFKVo8eeLirsS0A==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=funnyappstorage;AccountKey=jin39MeUxYxMiAmFVzJs7FWRnsLr5/oB/549dCjvvpUFfRivjRWZdPA/Stfs8uNVSVf7IzGf13CRX6/HWzvGmQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="ibrahimatay" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEGyCvwj6QamkS3V70c5j7DEwDQYJKoZIhvcNAQEBBQAEggEAUV6P3h4Im1oJka08VXZh2mm9dxIqlTwRXonlv4aYbAHQPXOEKAs6obzdOhLH0f6eW4uZo00GegDIbaE5VN9zAXGYU9E1fC3c2qKQYPVNRzdvbs86r8ascY5SNFOnEyOd9bpPmN/7r2F9aCeShK5U+BL4F0xU17d/vjt9Tfi2+VfLb24qmWBNt2ulajAmc61Gt0/urTc1PrqEt3yalFx4efWGSKz5ND8WZS5oRmMD7CyEWmsRtSuNjkoWRal3Y557Mp/R77RPYxVyJDNRcT9U7ghD0aZ3ORgI7Fc+l2v+M/1ubciX+gsn+P7jdJgwzfWpu9WACa9mM+Odvj28wTEHrTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECIngOX5eRs4qgBDA4NUMERUkXQHz065O+sih" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-12-29T23:59:59.0000000+02:00" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="D4EB5CDF049B43781B47006392CC7BC07E3519A6" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
   <Role name="WindowsAzure.FunnyApp.ImageWorker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=channelperforming;AccountKey=s2DdrMpdtRWGDFxIeKo6QEm7x0KvfUo5hbjSZkeH3dA96QVeUsUC0RnojILrbcqBoK3/lXxoFKVo8eeLirsS0A==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=funnyappstorage;AccountKey=jin39MeUxYxMiAmFVzJs7FWRnsLr5/oB/549dCjvvpUFfRivjRWZdPA/Stfs8uNVSVf7IzGf13CRX6/HWzvGmQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="ibrahimatay" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEGyCvwj6QamkS3V70c5j7DEwDQYJKoZIhvcNAQEBBQAEggEAUV6P3h4Im1oJka08VXZh2mm9dxIqlTwRXonlv4aYbAHQPXOEKAs6obzdOhLH0f6eW4uZo00GegDIbaE5VN9zAXGYU9E1fC3c2qKQYPVNRzdvbs86r8ascY5SNFOnEyOd9bpPmN/7r2F9aCeShK5U+BL4F0xU17d/vjt9Tfi2+VfLb24qmWBNt2ulajAmc61Gt0/urTc1PrqEt3yalFx4efWGSKz5ND8WZS5oRmMD7CyEWmsRtSuNjkoWRal3Y557Mp/R77RPYxVyJDNRcT9U7ghD0aZ3ORgI7Fc+l2v+M/1ubciX+gsn+P7jdJgwzfWpu9WACa9mM+Odvj28wTEHrTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECIngOX5eRs4qgBDA4NUMERUkXQHz065O+sih" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-12-29T23:59:59.0000000+02:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="D4EB5CDF049B43781B47006392CC7BC07E3519A6" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
 </ServiceConfiguration>

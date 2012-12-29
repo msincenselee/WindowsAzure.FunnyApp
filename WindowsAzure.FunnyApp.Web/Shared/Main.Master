@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="WindowsAzure.FunnyApp.Web.Shared.Main" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>FunnyApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="/Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.7.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="/">FunnyApp</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="/">Home</a></li>
+                            <% if (Page.User.Identity.IsAuthenticated)
+                               { %>
+                            <li><a href="/Manager/ImageUploadPage.aspx">Uploads</a></li>
+                            <li><a href="/Manager/MyUploads.aspx">My Uploads</a></li>
+                            <% } %>
+                            <li>
+                                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                            </li>
+                        </ul>
+                        <div class="navbar-form pull-right">
+                            <asp:TextBox ID="TextBoxSearch" CssClass="span2" runat="server"></asp:TextBox>
+                            <asp:Button ID="ButtonSearch" CssClass="btn" runat="server" Text="Search" OnClick="ButtonSearch_Click" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="controls-row">
+                <div class="container">
+                    <p>
+                        Development By <a href="http://www.ibrahimatay.org">İbrahim ATAY</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <script src="/Scripts/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>

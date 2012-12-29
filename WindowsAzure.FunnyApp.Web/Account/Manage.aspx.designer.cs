@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsAzure.FunnyApp.Web.Account
-{
-
-
-    public partial class Manage
-    {
-
+namespace WindowsAzure.FunnyApp.Web.Account {
+    
+    
+    public partial class Manage {
+        
         /// <summary>
         /// successMessage control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace WindowsAzure.FunnyApp.Web.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder successMessage;
-
+        
         /// <summary>
         /// setPassword control.
         /// </summary>
@@ -31,27 +29,7 @@ namespace WindowsAzure.FunnyApp.Web.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder setPassword;
-
-        /// <summary>
-        /// password control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
-
-
-
-        /// <summary>
-        /// confirmPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox confirmPassword;
-
+        
         /// <summary>
         /// changePassword control.
         /// </summary>
@@ -60,7 +38,14 @@ namespace WindowsAzure.FunnyApp.Web.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder changePassword;
-
-
+        
+        /// <summary>
+        /// ChangePassword1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ChangePassword ChangePassword1;
     }
 }
